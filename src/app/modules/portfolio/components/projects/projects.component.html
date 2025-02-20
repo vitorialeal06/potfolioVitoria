@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Projetos Desenvolvidos</h2>
+
+    <ul>
+        @for(item of arrayProjetcs();track item){
+            <li>
+                <button (click) = "openDialog(item)" >
+                    <img 
+                        [src]="item.src"
+                        [alt]="item.alt"
+                        loading="lazy"
+                    />
+
+                </button>
+            </li>
+        }
+    </ul>
+</div>
+<!-- [attr.height]="item.height"
+     [attr.width]="item.width"-->
